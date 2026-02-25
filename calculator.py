@@ -32,6 +32,7 @@
 
 def calculator():
     print("Welcome to my calculator!")
+    print("These are the operations you can perform: add, sub, multiply, divide, quit")
     while True:
         print("What would you like to do?")
         num1 = float(input("Enter first number: "))
@@ -55,4 +56,9 @@ def calculator():
             print("Invalid operation, Please try again.")
             continue
         print("Result:", result)
+        if input("Do you want to calculate again? (yes/quit):").lower() == "yes":
+            continue
+        else:
+            print("Goodbye!")
+            break
 calculator()    
