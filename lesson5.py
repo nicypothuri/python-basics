@@ -1,3 +1,5 @@
+#LISTS  
+
 students = ["Alice", "Bob", "Charlie", "David", "Eve"]
 print(students)
 print(students[0])
