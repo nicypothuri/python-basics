@@ -1,20 +1,22 @@
-# student = {"Name" : "Alice", "Age" : 25, "gpa" : 4.0, "Living" : "campus dorm"}
+# Dictionaries 
 
-# print(student)
-# print(student["Age"])
-# print(student["Living"])
+student = {"Name" : "Alice", "Age" : 25, "gpa" : 4.0, "Living" : "campus dorm"}
 
-# #update the existing value
-# student["Age"] = 24
-# print(student["Age"])
+print(student)
+print(student["Age"])
+print(student["Living"])
 
-# #add a new key-value pair
-# student["Major"] = "Computer Science"
-# print(student)
+#update the existing value
+student["Age"] = 24
+print(student["Age"])
 
-# #Loop through the dictionary
-# for key, value in student.items():
-#     print(key, ":", value)
+#add a new key-value pair
+student["Major"] = "Computer Science"
+print(student)
+
+#Loop through the dictionary
+for key, value in student.items():
+    print(key, ":", value)
 
 
 classroom = [{"name":"Alice", "age": 24, "gpa": 4.0}, {"name":"Bob", "age": 22, "gpa": 3.5}, {"name":"Charlie", "age": 23, "gpa": 3.8}]
