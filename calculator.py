@@ -1,35 +1,3 @@
-#def calculator():
-#    print('Welcome to my calculator!')
-
-#    num1 = float(input('Enter first number:'))
-#    num2 = float(input('Enter second number:'))
-
-#    operation = input('choose an operation(Addition / Subtraction / Multiplication / Division): ')
-
-#    if operation == 'Addition':
-#        result = num1 + num2
-
-#    elif operation == 'Subtraction':
-#        result = num1 - num2
-
-#    elif operation == 'Multiplication':
-#        result = num1 * num2
-
-#    elif operation == 'Division':
-#        if num2 == 0:
-#            print('Error: Division by zero is not allowed.')
-#            return  
-#        result = num1 / num2
-#    else:
-#        print('Invalid operation. Please choose from Addition, Subtraction, Multiplication, or Division.')
-#        return
-    
-#    print('Result:', result)
-
-#calculator()
-
-
-
 def calculator():
     print("Welcome to my calculator!")
     print("These are the operations you can perform: add, sub, multiply, divide, quit")
