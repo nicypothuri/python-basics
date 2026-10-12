@@ -1,15 +1,15 @@
-student =[]
-def add_students():
-    name = input("Enter yor name:")
+students =[]
+def add_student():
+    name = input("Enter your name:")
     gpa = float(input("Enter your GPA:"))
-    student.append({"name": name, "gpa": gpa})
+    students.append({"name": name, "gpa": gpa})
     print("Student added!")
 
 def view_students():
-    if len(student) == 0:
+    if len(students) == 0:
         print("No students in the list.")
     else:
-        for s in student:
+        for s in students:
             grade = get_grades(s["gpa"])
             print("Name:", s["name"], "GPA:", s["gpa"], "Grade:", grade)
 
@@ -30,7 +30,7 @@ def main():
         print("3. Quit")
         choice = input("Enter your choice:")
         if choice == "1":
-            add_students()
+            add_student()
         elif choice == "2":
             view_students()
         elif choice == "3":
