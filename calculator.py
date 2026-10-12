@@ -3,8 +3,12 @@ def calculator():
     print("These are the operations you can perform: add, sub, multiply, divide, quit")
     while True:
         print("What would you like to do?")
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
+        try:
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+        except ValueError:
+            print("Invalid input! Please enter a valid number.")
+            continue
         operation = input("Choose operation(add / sub / multiply / divide / quit):")
         if operation == "quit":
             print("Goodbye!")
